@@ -1,4 +1,6 @@
 import React from 'react';
+
+import './Card.scss';
 import cardCover from '../assets/images/card-cover.png';
 import user1 from '../assets/images/user1.png';
 import user2 from '../assets/images/user2.png';
@@ -6,11 +8,12 @@ import user3 from '../assets/images/user3.png';
 
 const Card = () => {
     return (
-        <div className="game">
+        <div className="container">
+            <div className="game">
             <div className="rank">3</div>
             <div className="front">
-                <img src={cardCover} alt="card-cover" style={{width: "300px"}}></img>
-                <h3 className="name">Card name title</h3>
+                <img className="thumbnail" src={cardCover} alt="card-cover" ></img>
+                <h3 className="name">Card name</h3>
                 <div className="stats">
                     <p className="viewers">539.8k</p>
                     <div className="streamers">
@@ -44,9 +47,11 @@ const Card = () => {
             </div>
 
             <div className="background">
-                
+
             </div>
         </div>
+        </div>
+        
     )
 }
 
