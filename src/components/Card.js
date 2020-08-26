@@ -9,7 +9,7 @@ import user3 from '../assets/images/user3.png';
 const Card = () => {
     return (
         <div className="container">
-            <div className="game">
+            <div href="google.com" className="game">
             <div className="rank">3</div>
             <div className="front">
                 <img className="thumbnail" src={cardCover} alt="card-cover" ></img>
@@ -31,15 +31,18 @@ const Card = () => {
                 </div>
                 <button className="btn">See more</button>
                 <div className="streamers">
-                    <div className="streamer">
+                    <div className="streamer"> 
+                        <div className="icon"><img src={user1} alt=""></img></div>
                         <p className="name">Name 1</p>
                         <p className="number">33</p>
                     </div>
                     <div className="streamer">
+                        <div className="icon"><img src={user2} alt=""></img></div>
                         <p className="name">Name 2</p>
                         <p className="number">396</p>
                     </div>
                     <div className="streamer">
+                        <div className="icon"><img src={user3} alt=""></img></div>
                         <p className="name">Name 3</p>
                         <p className="number">123</p>
                     </div>
@@ -47,7 +50,6 @@ const Card = () => {
             </div>
 
             <div className="background">
-
             </div>
         </div>
         </div>
